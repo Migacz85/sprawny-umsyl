@@ -1,118 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nazywam się Jakub Rafalski. Jestem psychologiem i psychoterapeutą poznawczo-behawioralnym. Oferuję psychoterapię dla osób dorosłych i młodzieży. Zapraszam do kontaktu.">
+  <meta name="keywords"
+    content="psychoterapia, psychologia, terapia, zaburzenia lękowe, zaburzenia nastroju, zaburzenia odżywiania, psychoterapeuta, psycholog, psycholog Marki, psychoterapeuta Marki, psycholog Warszawa, psychoterapeuta Warszawa, Jakub Rafalski">
+  <meta name="author" content="Jakub Rafalski">
+  <meta name="robots" content="index, follow">
+
+  <!-- Twitter Card meta tags
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Psychoterapia Poznawczo-Behawioralna - Jakub Rafalski">
+    <meta name="twitter:description" content="Nazywam się Jakub Rafalski. Jestem psychologiem i psychoterapeutą poznawczo-behawioralnym. Oferuję psychoterapię dla osób dorosłych i młodzieży. Zapraszam do kontaktu.">
+    <meta name="twitter:image" content="./img/KUBA.png"> -->
+
+  <!-- TikTok -->
+  <meta property="tiktok:site" content="@your_tiktok_username">
+  <meta property="tiktok:description" content="Your TikTok profile description">
+
+  <!-- Facebook -->
+  <meta property="fb:app_id" content="your_facebook_app_id">
+
+  <!-- Instagram -->
+  <meta property="instagram:site" content="@your_instagram_username">
+  <meta property="instagram:description" content="Your Instagram profile description">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/favicon.ico">
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  
-  <title>Classic One Page Site</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+  <title>Psychoterapia Poznawczo-Behawioralna - Jakub Rafalski</title>
   <style>
     body {
       font-family: 'Lato', sans-serif;
     }
-    .kuba-img {
-      
+
+    h2 {
+      font-family: 'Aboreto', cursive;
+      color: #42B690;
     }
+    li{ margin-left: 45px;}
+
+    .footer {
+      background-color: #42B690;
+    }
+
     html {
-  scroll-behavior: smooth;
-  scroll-padding-top: -80px; /* Offset for the fixed header height */
-}
+      scroll-behavior: smooth;
+      scroll-padding-top: -80px;
+      /* Offset for the fixed header height */
+    }
 
-/* Optional: Add a transition effect to scroll behavior */
-body {
-  transition: scroll-behavior 0.3s ease-in-out;
-}
+    /* Optional: Add a transition effect to scroll behavior */
+    body {
+      transition: scroll-behavior 0.3s ease-in-out;
+    }
 
-  @media (max-width: 640px) {
+    @media (max-width: 640px) {
       .nav-menu {
         display: none;
       }
+
       .nav-menu.open {
         display: block;
       }
-    } .nav-toggle {
+    }
+
+    .nav-toggle {
       display: none;
     }
+
     @media (max-width: 640px) {
       .nav-toggle {
         display: block;
       }
+
       .nav-menu {
         display: none;
       }
+
       .nav-menu.open {
         display: block;
       }
-    }
 
+      .sticky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        backdrop-filter: blur(10px);
+        /* Apply blur effect */
+        z-index: 9999;
+      }
+
+      /* @media (prefers-color-scheme: dark) {
+  .dark .container {
+      filter: invert(100%);
+  }
+} */
+
+    }
   </style>
 </head>
+
 <header>
-        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <a href="#" class="flex items-center">
-                    <img src="img/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sprawny Umysł </span>
-                </a>
-                <div class="flex items-center lg:order-2">
-                    
-                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </div>
-         
-                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 ml-auto" id="mobile-menu-2">
-    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-        <li>
+  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+      <a href="#section1" class="flex items-center">
+        <img src="img/logo2.jpg"  class="mr-3 h-20 sm:h-20" alt="Logo" />
+        <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sprawny Umysł </span> -->
+      </a>
+      <div class="flex items-center lg:order-2">
+        <button data-collapse-toggle="mobile-menu-2" type="button"
+          class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu-2" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 ml-auto" id="mobile-menu-2">
+        <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <li>
             <a href="#section1" class="block py-2 pr-4 pl-3 text-gray-700" aria-current="page">O mnie</a>
-        </li>
-        <li>
-            <a href="#section2" class="block py-2 pr-4 pl-3 text-gray-700 ">Leczone choroby</a>
-        </li>
-        <li>
+          </li>
+          <li>
+            <a href="#section2" class="block py-2 pr-4 pl-3 text-gray-700 ">Zakres Leczenia</a>
+          </li>
+          <li>
             <a href="#section3" class="block py-2 pr-4 pl-3 text-gray-700 ">Cennik</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="#section4" class="block py-2 pr-4 pl-3 text-gray-700 ">Kontakt</a>
-        </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    </ul>
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </div>
 
-            </div>
-        </nav>
-    </header>
 
-    
-    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
-</div>
-  
-  
 
 <body class="">
- 
 
 
-<!-- Section1  -->
+
+  <!-- Section1  -->
   <main class=" mt-0">
 
     <!-- Main -->
     <section class="flex justify-center items-center">
       <img src="./img/header.jpg" alt="Image" class="max-h-96">
     </section>
-    
 
-    <section id="section1" class="bg-gray-0 py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64 " >
+
+    <section id="section1" class="bg-gray-0 py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64 ">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="hidden md:block md:order-1">
-          <img src="./img/KUBA.png" alt="Kuba" class="max-h-96 mx-auto">
+          <img src="./img/Kuba.jpg" alt="Kuba" class="max-h-96 mx-auto  ">
         </div>
-         <div class="text-justify">
+        <div class="text-justify dark:bg-white">
           <h2 class="text-2xl font-bold mb-4  ">O mnie</h2>
-          <img src="./img/KUBA.png" alt="Image 1" class="max-h-96 mx-auto md:hidden mb-4">
+          <img src="./img/KUBA.png" alt="Image 1" class="max-h-96 mx-auto md:hidden mb-4 ">
           <p>
 
             Nazywam się Jakub Rafalski. Jestem psychologiem i psychoterapeutą
@@ -122,38 +194,57 @@ body {
             Uniwersytetu SWPS (pod kierownictwem dr hab. Agnieszki Popiel i dr
             Ewy Pragłowskiej). Z początkiem roku 2023 uzyskałem certyfikat
             psychoterapeutyczny (nr 1401), przyznany przez Polskie Towarzystwo
-            Terapii Poznawczej i Behawioralnej.  Doświadczenie zawodowe
+            Terapii Poznawczej i Behawioralnej. Doświadczenie zawodowe
             zdobywałem w takich miejscach jak Klinika Psychiatrii Dziecięcej
             szpitala przy ul. Żwirki i Wigury w Warszawie, Akademickie Centrum
             Medyczne, czy stowarzyszenie „Apetyt na życie”.</p>
           </br>
-            <p> Aktualnie prowadzę
+          <p> Aktualnie prowadzę
             prywatną praktykę terapeutyczną, gdzie pracuję zarówno z osobami
             dorosłymi, jak i młodzieżą. Dodatkowo, pełnię funkcję terapeuty w
             Klinice Terapii Poznawczo-Behawioralnej Uniwersytetu SWPS oraz w
-            fundacji „Avalon”.            Swoją wiedzę pogłębiam biorąc udział w
+            fundacji „Avalon”. Swoją wiedzę pogłębiam biorąc udział w
             licznych szkoleniach, konferencjach z zakresu psychologii i
             psychoterapii. Pracuję pod stałą superwizją.</p>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section id="section2" class="bg-white py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
+
         <div class="hidden md:block">
-          <img src="./img/fotel.jpg" alt="Image 2" class="max-h-64 mx-auto ">
+          <img src="./img/mozg.jpg" alt="Image 2" class="max-h-64 mx-auto ">
         </div>
         <div>
-          <h2 class="text-2xl font-bold mb-4">Leczone choroby</h2>
-          <img src="./img/fotel.jpg" alt="Image 2" class="md:hidden mb-4 max-h-64 mx-auto p-5">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at tempus lacus, eget porta nunc. Curabitur ullamcorper sodales odio, eu interdum magna iaculis at.</p>
+          <h2 class="text-2xl font-bold mb-4">Zakres Leczenia</h2>
+          <img src="./img/mozg.jpg" alt="Image 2" class="md:hidden mb-4 max-h-64 mx-auto p-5">
+
+          <p> Psychoterapia poznawczo-behawioralna opiera się na solidnych podstawach naukowych. Jest to podejście,
+            która zostało dogłębnie przebadana i potwierdzone jako skuteczna forma leczenia wielu zaburzeń psychicznych.
+          </p>
+          <br>
+          <p>W gabinecie Sprawny Umysł otrzymacie Państwo pomoc w takich dolegliwościach jak:
+          </p>
+          <br>
+          <ul class="list-disc">
+            <li>zaburzenia lękowe <i>(lęk paniczny, lęk uogólniony, nerwica natręctw, fobie)</i>
+            
+            <li>zaburzenia nastroju <i> (depresja, choroba afektywna dwubiegunowa) </i></li>
+            <li>zaburzenia potraumatyczne <i>(PTSD, zaburzenia dysocjacyjne) </i></li>
+            <li>zaburzenia odżywiania <i>(bulimia, anoreksja) </i> </li>
+            <li>zaburzenia osobowości</li>
+
+          </ul>
+          <!-- grafika obok mozg. -->
+
+
         </div>
       </div>
     </section>
-<!-- Section 2  -->
- 
+    <!-- Section 2  -->
+
     <section id="section3" class="bg-gray-0 py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
         <div class="hidden md:block md:order-1">
@@ -163,36 +254,62 @@ body {
           <h2 class="text-2xl font-bold mb-4">Cennik</h2>
           <img src="img/portfel.jpg" alt="Image 1" class=" md:hidden mb-4 max-h-64 mx-auto p-5">
           <p>
-
-<p>Sesja indywidualna (50 minut) - 160 zł</p>
-<p>Sesja indywidualna (90 minut) - 250 zł</p>
-<p>Sesja rodzinna/pary (75 minut) - 250 zł </p>
-<br>
-*Sesja nieodwołana lub odwołana w czasie krótszym niż 24 godziny przed planowanym rozpoczęciem jest w pełni płatna
+<ul class="list-disc">
+            <li>Sesja indywidualna (50 minut) - 160 zł</li>
+            <li>Sesja indywidualna (90 minut) - 250 zł</li>
+            <li>Sesja rodzinna/pary (75 minut) - 250 zł </li>
+            <br>
+            <p>Sesje odbywają się także online (via Skype)</p>
+            <br>
+            <p>PŁATNOŚĆ GOTÓWKĄ LUB BLIK</p>
+</ul>
+            <br>
+            <i>*Sesja nieodwołana lub odwołana w czasie krótszym niż 24 godziny przed planowanym rozpoczęciem jest w
+              pełni płatna</i>
 
           </p>
         </div>
       </div>
     </section>
-    
-    <section id="section4" class="bg-white py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64">
+
+    <section>
+
+      <div class="grid grid-cols-1 md:grid-cols-1 py-10 gap-8 items-center">
+          <h2 class="text-3xl font-bold mb-4 mx-auto">Umów się na wizytę już teraz !</h2>
+      </div>
+
+    </section>
+
+    <section id="section4" class="bg-white py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-56">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="hidden md:block">
-          <img src="img/telegram.jpg" alt="Image 2" class="max-h-40">
+          <img src="img/telegram.jpg" alt="Image 2" class="max-h-64">
         </div>
         <div>
           <h2 class="text-2xl font-bold mb-4">Kontakt</h2>
           <img src="img/telegram.jpg" alt="Image 2" class="md:hidden mb-4 mx-auto max-h-40">
 
-          <p> ul. Koszalińska 5, 05-270 Marki </p>
+
+          <br>
+          <p> Adres: ul. Koszalińska 5, 05-270 Marki </p>
           <p> Numer telefonu: <b>609 001 754</b> </p>
+          </br>
+
+          <iframe class="hidden md:block"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2439.057439630793!2d21.1139661954662!3d52.31496020184917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf077cd76d09%3A0x2e0f6c4a961bb770!2sKoszali%C5%84ska%205%2C%2005-260%20Marki%2C%20Poland!5e0!3m2!1sen!2suk!4v1686168446841!5m2!1sen!2suk"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
+    <iframe class="md:hidden"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2439.057439630793!2d21.1139661954662!3d52.31496020184917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf077cd76d09%3A0x2e0f6c4a961bb770!2sKoszali%C5%84ska%205%2C%2005-260%20Marki%2C%20Poland!5e0!3m2!1sen!2suk!4v1686168446841!5m2!1sen!2suk"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<!-- Section 4 -->
+    <!-- Section 4 -->
 
- 
+
     <!-- <section id="section5" class="bg-gray-100 py-12 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div class="grid grid-cols-1 md:grid-cols-1 gap-0 items-center flex ">
         <div>
@@ -200,31 +317,44 @@ body {
           <p> ul. Koszalińska 5, 05-270 Marki </p>
           <p> Numer telefonu: <b>609 001 754</b> </p>
         </div>
-    </section> -->
-   
+    </section> !--> 
+
     <!-- Footer -->
 
-    <footer class="bg-gray-100 py-8">
-  <div class="container mx-auto flex justify-center">
-    <a href="https://facebook.com" target="_blank" class="mx-4">
-      <img src="img/facebook.jpg" alt="Facebook" class="w-6 h-6">
-    </a>
-    <a href="#" class="mx-4">
-      <img src="img/tik-tok.jpg" alt="Twitter" class="w-6 h-6">
-    </a>
-    <a href="https://www.znanylekarz.pl/jakub-rafalski/psycholog-psychoterapeuta/warszawa" target="_blank" class="mx-4">
-      <img src="img/znany-lekarz.jpg" alt="Instagram" class="w-6 h-6">
-    </a>
-    <a href="#" class="mx-4">
-      <img src="img/insta.jpg" alt="LinkedIn" class="w-6 h-6">
-    </a>
-  </div>
-  <div class="container mx-auto flex justify-center pt-5 text-xs">
-    Sprawny Umysl 2023/2024
+    <footer class="bg-green-400 py-8 footer  ">
+      <div class="container mx-auto flex justify-center filter invert relative">
+        <a href="https://facebook.com" target="_blank" class="mx-4 ">
+          <img src="img/facebook.jpg" alt="Facebook"
+            class="w-6 h-6 transition-transform duration-300 transform hover:scale-125 ">
+        </a>
+        <a href="#" class="mx-4">
+          <img src="img/tik-tok.jpg" alt="Twitter"
+            class="w-6 h-6 transition-transform duration-300 transform hover:scale-125">
+        </a>
+        <a href="https://www.znanylekarz.pl/jakub-rafalski/psycholog-psychoterapeuta/warszawa" target="_blank"
+          class="mx-4">
+          <img src="img/znany-lekarz.jpg" alt="Instagram"
+            class="w-6 h-6 transition-transform duration-300 transform hover:scale-125">
+        </a>
+        <a href="#" class="mx-4">
+          <img src="img/insta.jpg" alt="LinkedIn"
+            class="w-6 h-6 transition-transform duration-300 transform hover:scale-125">
+        </a>
+      </div>
+      <div class="container mx-auto flex justify-center pt-5 text-xs text-white">
+        Sprawny Umysł 2023/2024
 
-  </div>
-</footer>
-
+      </div>
+    </footer>
+    <script>
+      // Check if dark mode is preferred
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // Add dark class to container
+        const container = document.querySelector('.container');
+        container.classList.add('dark');
+      }
+    </script>
 
 </body>
+
 </html>
