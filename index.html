@@ -66,7 +66,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 80px;
+      scroll-padding-top: 70px;
       /* Offset for the fixed header height */
     }
 
@@ -75,7 +75,7 @@
       transition: scroll-behavior 0.3s ease-in-out;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 1023px) {
       .nav-menu {
         display: none;
       }
@@ -83,7 +83,14 @@
       .nav-menu.open {
         display: block;
       }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 210px;
+      /* Offset for the fixed header height */
     }
+    }
+
 
     .nav-toggle {
       display: none;
@@ -112,6 +119,38 @@
         z-index: 9999;
       }
 
+      @keyframes slidein-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidein-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slidein-right {
+  animation: slidein-right 0.5s ease-out;
+}
+
+.animate-slidein-left {
+  animation: slidein-left 0.5s ease-out;
+}
+
+
+
+
+
+
+
       /* @media (prefers-color-scheme: dark) {
   .dark .container {
       filter: invert(100%);
@@ -123,19 +162,19 @@
 </head>
 
 </div>
-<header class="fixed w-screen" style="z-index: 1">
+<header class=" fixed w-screen" style="z-index: 1">
   <nav class="shadow-md bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-      <a href="#section1" class="flex items-center">
+    <div class="flex flex-wrap justify-between items-center mx-auto w-11/12">
+      <a href="#section0" class="flex items-center">
         <img src="img/logo2.jpg"  class="max-h-10 sm:max-h-16" alt="Logo" />
         <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sprawny Umysł </span> -->
       </a>
       <div class="flex items-center lg:order-2">
         <button data-collapse-toggle="mobile-menu-2" type="button"
-          class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 ml-10 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="mobile-menu-2" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <span class="sr-only ">Open main menu</span>
+          <svg class="w-6 h-6 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"></path>
@@ -193,7 +232,6 @@
 </br>
 </br>
 </br>
-</br>
 </div>
   <main class="">
 
@@ -205,25 +243,44 @@
  -->
 
 
-    <section class="flex flex-col justify-center items-center " >
+    <section id="section0" class="flex flex-col justify-center items-center " >
 
-      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> Gabinet psychologii </h2> 
-      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> i psychoterapii </h2> 
-      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> poznawczo-behawioralnej </h2>
+      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center 
+      block duration-100 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }' >
+       Gabinet psychologii </h2> 
+      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center 
+      block duration-200 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }' 
+      > i psychoterapii </h2> 
+      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center 
+      block duration-300 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }' 
+      > poznawczo-behawioralnej </h2>
 
-      <img src="./img/logo4.png" alt="Image" class="mx-auto max-h-24 mt-5 mb-0">
-      <h2 class="text-3xl lg:text-4xl uppercase text-black"> Sprawny </h2>
-      <h2 class="text-3xl lg:text-4xl uppercase text-black"> umysł</h2>
+      <img src="./img/logo4.png" alt="Image" class="mx-auto max-h-24 mt-5 mb-0
+      block duration-500 relative transform opacity-0 transition-all translate-y-12 ease-out" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }' 
+      >
+      <h2 class="text-3xl lg:text-4xl uppercase text-black 
+      
+      block duration-700 relative transform opacity-0 transition-all translate-x-12 ease-out" data-replace='{ "translate-x-12": "translate-x-0", "opacity-0": "opacity-100" }' 
+      > Sprawny </h2>
+     
+      <h2 class="text-3xl lg:text-4xl uppercase text-black
+      block duration-1000 relative transform opacity-0 transition-all -translate-x-12 ease-out" data-replace='{ "-translate-x-12": "translate-x-0", "opacity-0": "opacity-100" }' 
+      > umysł</h2>
+
     </section>
 
     <section id="section1" class="bg-gray-0 py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64 ">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="hidden md:block md:order-1">
-          <img src="./img/Kuba.jpg" alt="Kuba" class="max-h-96 mx-auto  ">
+          <img src="./img/Kuba.jpg" alt="Kuba" class="max-h-96 mx-auto  "
+          >
         </div>
         <div class="text-justify dark:bg-white">
           <h2 class="text-2xl  mb-4  ">O mnie</h2>
-          <img src="./img/KUBA.png" alt="Image 1" class="max-h-96 mx-auto md:hidden mb-4 ">
+          <img src="./img/KUBA.png" alt="Image 1" class="max-h-96 mx-auto md:hidden mb-4 
+
+          
+          ">
           <p>
 
             Nazywam się Jakub Rafalski. Jestem psychologiem i psychoterapeutą
@@ -436,6 +493,18 @@
       </div>
     </footer>
     <script>
+      document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+        var replacers = document.querySelectorAll('[data-replace]');
+        for(var i=0; i<replacers.length; i++){
+            let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+            Object.keys(replaceClasses).forEach(function(key) {
+                replacers[i].classList.remove(key);
+                replacers[i].classList.add(replaceClasses[key]);
+            });
+        }
+    }, 1);
+});
     </script>
 
 </body>
