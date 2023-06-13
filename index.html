@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Nazywam się Jakub Rafalski. Jestem psychologiem i psychoterapeutą poznawczo-behawioralnym. Oferuję psychoterapię dla osób dorosłych i młodzieży. Zapraszam do kontaktu.">
+    content="Kompleksowe wsparcie z zakresu psychologii i psychoterapii poznawczo-behawioralnej, także online">
   <meta name="keywords"
     content="psychoterapia, psychologia, terapia, zaburzenia lękowe, zaburzenia nastroju, zaburzenia odżywiania, psychoterapeuta, psycholog, psycholog Marki, psychoterapeuta Marki, psycholog Warszawa, psychoterapeuta Warszawa, Jakub Rafalski">
   <meta name="author" content="Jakub Rafalski">
@@ -66,7 +66,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: -80px;
+      scroll-padding-top: 80px;
       /* Offset for the fixed header height */
     }
 
@@ -122,8 +122,9 @@
   </style>
 </head>
 
-<header>
-  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+</div>
+<header class="fixed w-screen" style="z-index: 1">
+  <nav class="shadow-md bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
       <a href="#section1" class="flex items-center">
         <img src="img/logo2.jpg"  class="max-h-10 sm:max-h-16" alt="Logo" />
@@ -150,16 +151,16 @@
         <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
 
           <li class="ml-1">
-            <a href="#section1" class="block py-1 pr-0 pl-0 text-gray-700" aria-current="page">O mnie</a>
+            <a href="#section1" class="block py-1 pr-0 pl-0 text-gray-700 hover:text-green-600" aria-current="page">O mnie</a>
           </li>
           <li class="ml-1">
-            <a href="#section2" class="block py-1 pr-0 pl-0 text-gray-700 ">Zakres Leczenia</a>
+            <a href="#section2" class="block py-1 pr-0 pl-0 text-gray-700 hover:text-green-600">Zakres Leczenia</a>
           </li>
           <li class="ml-1">
-            <a href="#section3" class="block py-1 pr-0 pl-0 text-gray-700 ">Cennik</a>
+            <a href="#section3" class="block py-1 pr-0 pl-0 text-gray-700 hover:text-green-600 ">Cennik</a>
           </li>
           <li class="ml-1">
-            <a href="#section4" class="block py-1 pr-0 pl-0 text-gray-700 ">Kontakt</a>
+            <a href="#section4" class="block py-1 pr-0 pl-0 text-gray-700  hover:text-green-600">Kontakt</a>
           </li>
 
           <!-- <li class="ml-1">
@@ -187,11 +188,14 @@
 
 
 <body class="">
-
-
-
-  <!-- Section1  -->
-  <main class=" mt-0">
+<div class="min-h-24">
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
+  <main class="">
 
     <!-- Main -->
 
@@ -199,14 +203,17 @@
       <img src="./img/header.jpg" alt="Image" class="max-h-96">
     </section>
  -->
+
+
     <section class="flex flex-col justify-center items-center " >
-      <h2 class="sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> Gabinet psychologii </h2> 
-      <h2 class="sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> i psychoterapii </h2> 
-      <h2 class="sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> poznawczo-behawioralnej </h2>
+
+      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> Gabinet psychologii </h2> 
+      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> i psychoterapii </h2> 
+      <h2 class="text-2xl sm:text-2xl lg:text-3xl uppercase green justify-center items-center "> poznawczo-behawioralnej </h2>
 
       <img src="./img/logo4.png" alt="Image" class="mx-auto max-h-24 mt-5 mb-0">
-      <h2 class="text-4xl uppercase text-black"> Sprawny </h2>
-      <h2 class="text-4xl uppercase text-black"> umysł</h2>
+      <h2 class="text-3xl lg:text-4xl uppercase text-black"> Sprawny </h2>
+      <h2 class="text-3xl lg:text-4xl uppercase text-black"> umysł</h2>
     </section>
 
     <section id="section1" class="bg-gray-0 py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64 ">
@@ -215,7 +222,7 @@
           <img src="./img/Kuba.jpg" alt="Kuba" class="max-h-96 mx-auto  ">
         </div>
         <div class="text-justify dark:bg-white">
-          <h2 class="text-2xl font-bold mb-4  ">O mnie</h2>
+          <h2 class="text-2xl  mb-4  ">O mnie</h2>
           <img src="./img/KUBA.png" alt="Image 1" class="max-h-96 mx-auto md:hidden mb-4 ">
           <p>
 
@@ -250,23 +257,31 @@
           <img src="./img/mozg.jpg" alt="Image 2" class="max-h-64 mx-auto ">
         </div>
         <div>
-          <h2 class="text-2xl font-bold mb-4">Zakres Leczenia</h2>
+          <h2 class="text-2xl  mb-4">Zakres Leczenia</h2>
           <img src="./img/mozg.jpg" alt="Image 2" class="md:hidden mb-4 max-h-64 mx-auto p-5">
 
           <p> Psychoterapia poznawczo-behawioralna opiera się na solidnych podstawach naukowych. Jest to podejście,
             która zostało dogłębnie przebadana i potwierdzone jako skuteczna forma leczenia wielu zaburzeń psychicznych.
           </p>
           <br>
-          <p>W gabinecie Sprawny Umysł otrzymacie Państwo pomoc w takich dolegliwościach jak:
+          <p>W gabinecie <i>Sprawny Umysł</i> otrzymacie Państwo pomoc w takich dolegliwościach jak:
           </p>
           <br>
           <ul class="list-disc">
-            <li>zaburzenia lękowe <i>(lęk paniczny, lęk uogólniony, nerwica natręctw, fobie)</i>
-            
-            <li>zaburzenia nastroju <i> (depresja, choroba afektywna dwubiegunowa) </i></li>
-            <li>zaburzenia potraumatyczne <i>(PTSD, zaburzenia dysocjacyjne) </i></li>
-            <li>zaburzenia odżywiania <i>(bulimia, anoreksja) </i> </li>
+
+            <!-- <li>zaburzenia lękowe <i>( <span class="text-green-600 font-bold"> lęk paniczny, lęk uogólniony, nerwica natręctw, fobie </span>) </i>
+            <li>zaburzenia nastroju <i> ( <span class="text-green-600 font-bold"> depresja, choroba afektywna dwubiegunowa</span>) </i></li>
+            <li>zaburzenia potraumatyczne <i>( <span class="text-green-600 font-bold"> PTSD, zaburzenia dysocjacyjne </span>) </i></li>
+            <li>zaburzenia odżywiania <i>( <span class="text-green-600 font-bold"> bulimia, anoreksja </span> )</i> </li>
             <li>zaburzenia osobowości</li>
+            <li>zaburzenia snu</li> -->
+
+            <li> <span class="text-green-600 font-bold">zaburzenia lękowe </span><i>(lęk paniczny, lęk uogólniony, nerwica natręctw, fobie) </i>
+            <li> <span class="text-green-600 font-bold">zaburzenia nastroju <i> </span> (depresja, choroba afektywna dwubiegunowa) </i></li>
+            <li> <span class="text-green-600 font-bold">zaburzenia potraumatyczne <i> </span>(PTSD, zaburzenia dysocjacyjne) </i></li>
+            <li> <span class="text-green-600 font-bold">zaburzenia odżywiania <i> </span>(bulimia, anoreksja )</i> </li>
+            <li> <span class="text-green-600 font-bold">zaburzenia osobowości</li></span>
+            <li> <span class="text-green-600 font-bold">zaburzenia snu</li> </span>
 
           </ul>
           <!-- grafika obok mozg. -->
@@ -277,68 +292,93 @@
     </section>
     <!-- Section 2  -->
 
+
     <section id="section3" class="bg-gray-0 py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-64">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
         <div class="hidden md:block md:order-1">
           <img src="img/portfel.jpg" alt="Image 1" class="max-h-64 mx-auto">
         </div>
         <div>
-          <h2 class="text-2xl font-bold mb-4">Cennik</h2>
-          <img src="img/portfel.jpg" alt="Image 1" class=" md:hidden mb-4 max-h-64 mx-auto p-5">
-          <p>
-<ul class="list-disc">
-            <li>Sesja indywidualna (50 minut) - 160 zł</li>
-            <li>Sesja indywidualna (90 minut) - 250 zł</li>
-            <li>Sesja rodzinna/pary (75 minut) - 250 zł </li>
-            <br>
-            <p>Sesje odbywają się także online (via Skype)</p>
-            <br>
-            <p>PŁATNOŚĆ GOTÓWKĄ LUB BLIK</p>
-</ul>
-            <br>
-            <i>*Sesja nieodwołana lub odwołana w czasie krótszym niż 24 godziny przed planowanym rozpoczęciem jest w
-              pełni płatna</i>
-
+          <h2 class="text-2xl mb-4">Cennik</h2>
+          <img src="img/portfel.jpg" alt="Image 1" class="md:hidden mb-4 max-h-64 mx-auto p-5">
+          <ul class="list-disc pl-6">
+            <li class="mb-2">Sesja indywidualna <i>(50 minut) </i> - <span class="text-green-600 font-bold">160 zł</span></li>
+            <li class="mb-2">Sesja indywidualna<i> (90 minut) </i> - <span class="text-green-600 font-bold">250 zł</span></li>
+            <li class="mb-2">Sesja rodzinna/pary <i> (75 minut) </i>- <span class="text-green-600 font-bold">250 zł</span></li>
+          </ul>
+          <p class="mt-6">
+            Sesje odbywają się także online (via Skype).
+          </p>
+          <p class="mt-6">
+            <span class="text-xl font-bold">PŁATNOŚĆ GOTÓWKĄ LUB BLIK</span>
+          </p>
+          <p class="mt-6">
+            <i>*Sesja nieodwołana lub odwołana w czasie krótszym niż 24 godziny przed planowanym rozpoczęciem jest w pełni płatna.</i>
           </p>
         </div>
       </div>
     </section>
 
+
+
+
     <section id="section4">
-
       <div class="grid grid-cols-1 md:grid-cols-1 py-10 gap-8 items-center">
-          <h2 class="text-3xl font-bold mb-4 mx-auto text-center">Umów się na wizytę już teraz !</h2>
-
-              
+          <h2 class="text-3xl mb-4 mx-auto text-center">Umów się na wizytę już teraz !</h2>
           <a href="tel:609 001 754" class="text-blue-500 hover:text-blue-700 mx-auto transition-transform duration-300 transform hover:scale-125 ">
             <span class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block">
-              Zadzwoń 609-001-754
+              Zadzwoń 609 001 754
             </span>
             </a>
-
           <!-- <a href="skype:username?add" class="text-blue-500 hover:text-blue-700 mx-auto" >
             <span class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-block">
               Dodaj mnie na Skype
             </span>
           </a> -->
-
       </div>
-
     </section>
 
-    <section id="section5" class="bg-white py-5 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-56">
+    <section id="section4">
+      <div class="grid grid-cols-1 md:grid-cols-1 py-1 gap-8 items-center">
+          <div class="mx-auto ">
+
+          <h2 class="text-2xl justify-center center-items mb-4">Kontakt</h2>
+          </div>
+        
+      </div>
+    </section>
+
+
+    <section id="section5" class="bg-white py-3 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-56">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div class="hidden md:block">
           <img src="img/telegram.jpg" alt="Image 2" class="max-h-64">
         </div>
         <div>
-          <h2 class="text-2xl font-bold mb-4">Kontakt</h2>
           <img src="img/telegram.jpg" alt="Image 2" class="md:hidden mb-4 mx-auto max-h-40">
 
 
           <br>
-          <p> Adres: ul. Koszalińska 5, 05-270 Marki </p>
+
+          <div class="py-4">
+
+           <a class="inline-flex items-center hover:text-green-600" target="_blank"  href="https://goo.gl/maps/tqujZtpWUmq52jEu6" > 
+          <img src="img/adres.png" alt="Google Maps"
+            class="w-5 absolute text-green transition-transform duration-300 transform hover:scale-125">
+
+           <p class="ml-8 "> ul. Koszalińska 5, 05-270 Marki </p>
+           </a>
+
           </br>
+           <a class="inline-flex items-center hover:text-green-600" href="mailto:kontakt@sprawnyumysl.com" > 
+          <img src="img/mail.png" alt="Mail"
+            class="w-5 text-green transition-transform duration-300 transform hover:scale-125">
+         <p  class="ml-3" > kontakt@sprawnyumysl.com </p>
+
+           </a>
+
+
+        </div>
 
           <iframe class="hidden md:block"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2439.057439630793!2d21.1139661954662!3d52.31496020184917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf077cd76d09%3A0x2e0f6c4a961bb770!2sKoszali%C5%84ska%205%2C%2005-260%20Marki%2C%20Poland!5e0!3m2!1sen!2suk!4v1686168446841!5m2!1sen!2suk"
@@ -347,6 +387,8 @@
         </div>
       </div>
     </section>
+
+
     <iframe class="md:hidden"
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2439.057439630793!2d21.1139661954662!3d52.31496020184917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf077cd76d09%3A0x2e0f6c4a961bb770!2sKoszali%C5%84ska%205%2C%2005-260%20Marki%2C%20Poland!5e0!3m2!1sen!2suk!4v1686168446841!5m2!1sen!2suk"
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -387,17 +429,13 @@
         </a>
       </div>
       <div class="container mx-auto flex justify-center pt-5 text-xs text-white">
-        Sprawny Umysł 2023/2024
+        <a class="text-white" href="https://www.sprawnyumysl.com">
+        www.sprawnyumysl.com
+        </a>
 
       </div>
     </footer>
     <script>
-      // Check if dark mode is preferred
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // Add dark class to container
-        const container = document.querySelector('.container');
-        container.classList.add('dark');
-      }
     </script>
 
 </body>
